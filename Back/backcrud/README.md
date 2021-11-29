@@ -9,37 +9,36 @@ get 'http://localhost:8080/api/{Idlista}/todos'
 
 ## crear una nueva lista de tareas
 post 'http://localhost:8080/api/todolist'
-`
-{
-	"name" : "Nombre de la lista"
-}
-`
+`{`
+`	"name" : "Nombre de la lista"`
+`}`
 -Retorna un json con la lista con las tareas, nombre y ID.
 
 ## crear una tarea en una lista
 post 'http://localhost:8080/api/{Idlista}/todo'
-{
-	"name": "nombre de la tarea"
-}
+`{`
+`	"name": "nombre de la tarea"`
+`}`
 -retorna un json con el id de la tarea, id de la lista, nombre de la tarea y completado por defecto false
 
 ## Actualizar una tarea de una lista
 Put 'http://localhost:8080/api/{Idlista}/todo'
-{
-	"id": "Id de la tarea",
-	"name": "nombre de la tarea",
-	"completed" : "true or false"
-}
+`{`
+`	"id": "Id de la tarea",`
+`	"name": "nombre de la tarea",`
+`	"completed" : "true or false"`
+`}`
 -retorna un json con la tarea actualizada
 
 ## Actualizar una lista de tareas
 Put 'http://localhost:8080/api/{listId}/todolist'
-{
-	"name": "nombre de la tarea",
-}
+`{`
+`	"name": "nombre de la tarea",`
+`}`
 
 ## Eliminar una lista de tareas
 delete 'http://localhost:8080/api/{Idlista}/todolist'
 
 ## Eliminar una tarea de una lista
 delete 'http://localhost:8080/api/{Idlista}/todo'
+* El servidor no es capaz de eliminar una tarea de una lista por lo cual falta corregir este error*
