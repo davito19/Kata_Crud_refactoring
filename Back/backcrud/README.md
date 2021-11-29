@@ -1,5 +1,5 @@
-todo -> tareas de una lista
-todolist -> es la lista detareas
+`todo -> tareas de una lista`
+`todolist -> es la lista detareas`
 
 ## visualizar todas las listas de las tareas
 get 'http://localhost:8080/api/list'
